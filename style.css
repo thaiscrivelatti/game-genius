@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    background-color: lightskyblue;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nivel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.menu button {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.main-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genius {
+    display: grid;
+    grid-template-areas: 'verde vermelho' 'amarelo azul';
+    row-gap: 10px;
+    column-gap: 10px;
+    border: 5px solid white;
+    background-color: white;
+    border-radius: 100%;
+    margin-top: 20px;
+    width: 500px;
+    height: 500px;
+}
+
+.blue {
+    grid-area: azul;
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+    cursor: pointer;
+}
+
+.yellow {
+    grid-area: amarelo;
+    background-color: yellow;
+    border-bottom-left-radius: 100%;
+    cursor: pointer;
+}
+
+.red {
+    grid-area: vermelho;
+    background-color: red;
+    border-top-right-radius: 100%;
+    cursor: pointer;
+}
+
+.green {
+    grid-area: verde;
+    background-color: green;
+    border-top-left-radius: 100%;
+    cursor: pointer;
+}
+
+.blink {
+    animation: blink 1s linear normal;
+}
+@keyframes blink {
+    50% {opacity: 0};
+}
